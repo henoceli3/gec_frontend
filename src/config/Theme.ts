@@ -4,6 +4,7 @@ export const AppColors = {
   primary: "#10338D",
   secondary: "#ffb703",
   alterPrimary: "#0077b6",
+  tertiary: "#4F4A4A",
   success: "#52c41a",
   warning: "#faad14",
   error: "#f5222d",

@@ -4,6 +4,7 @@ import { FloatButton, Tooltip } from "antd";
 import { Outlet, useNavigate } from "react-router-dom";
 import FrontEndHeader from "../components/Header/FrontEndHeader";
 import "./FrontEndLayout.css";
+import FrontEndFooter from "../components/footer/FrontendFooter";
 
 const FrontEndLayout = () => {
   const navigate = useNavigate();
@@ -34,6 +35,7 @@ const FrontEndLayout = () => {
             />
           </Tooltip>
         </FloatButton.Group>
+        <FrontEndFooter />
       </div>
     </>
   );
