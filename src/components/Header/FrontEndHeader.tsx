@@ -56,12 +56,9 @@ const DrawerContainer = styled.div`
 `;
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const NavigateItemContainer = styled(({ isWide, ...props }) => (
-  <NavLink {...props} />
-))`
+const NavigateItemContainer = styled(NavLink)`
   text-decoration: none;
   margin: 0 1rem;
-  height: ${({ isWide }) => (isWide ? "100%" : "auto")};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,11 +91,7 @@ const FrontEndHeader = () => {
           {isLargerThan768 ? (
             <DesktopMenu>
               {navigateItems.map((item) => (
-                <NavigateItemContainer
-                  key={item.path}
-                  to={item.path}
-                  isWide={isLargerThan768}
-                >
+                <NavigateItemContainer key={item.path} to={item.path}>
                   <span>{item.label}</span>
                 </NavigateItemContainer>
               ))}
@@ -132,7 +125,6 @@ const FrontEndHeader = () => {
             <NavigateItemContainer
               key={item.path}
               to={item.path}
-              isWide={isLargerThan768}
               onClick={toggleMenu}
             >
               <span>{item.label}</span>
