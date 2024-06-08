@@ -1,22 +1,23 @@
 import { AliasToken } from "antd/es/theme/internal";
 
-export const appColors = {
-  primary: "#1890ff",
-  secondary: "#bfbfbf",
+export const AppColors = {
+  primary: "#10338D",
+  secondary: "#ffb703",
+  alterPrimary: "#0077b6",
   success: "#52c41a",
   warning: "#faad14",
   error: "#f5222d",
 };
 
 export const antdToken: Partial<AliasToken> = {
-  colorPrimary: appColors.primary,
-  colorError: appColors.error,
-  colorWarning: appColors.warning,
-  colorSuccess: appColors.success,
-  colorLink: appColors.primary,
-  colorLinkHover: appColors.primary,
+  colorPrimary: AppColors.primary,
+  colorError: AppColors.error,
+  colorWarning: AppColors.warning,
+  colorSuccess: AppColors.success,
+  colorLink: AppColors.primary,
+  colorLinkHover: AppColors.primary,
 };
 
 export const styleComponentsTheme = {
-  colors: appColors,
+  colors: AppColors,
 };

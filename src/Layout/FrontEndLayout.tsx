@@ -5,7 +5,6 @@ import { Outlet, useNavigate } from "react-router-dom";
 import FrontEndHeader from "../components/Header/FrontEndHeader";
 import "./FrontEndLayout.css";
 
-
 const FrontEndLayout = () => {
   const navigate = useNavigate();
   return (
@@ -13,14 +12,14 @@ const FrontEndLayout = () => {
       <div className="app">
         <FrontEndHeader />
         <Outlet />
-        <FloatButton.Group shape="square" style={{ right: 25 }}>
+        <FloatButton.Group shape="circle" style={{ right: 25 }}>
           <Tooltip title="Faire un don" placement="left">
             <FloatButton
               type="primary"
               icon={<FontAwesomeIcon icon={faHeart} />}
               onClick={() => {
                 localStorage.clear();
-                navigate("/admin/login", { replace: true });
+                navigate("/admin/login");
               }}
             />
           </Tooltip>
@@ -30,7 +29,7 @@ const FrontEndLayout = () => {
               icon={<FontAwesomeIcon icon={faCalendarDays} />}
               onClick={() => {
                 localStorage.clear();
-                navigate("", { replace: true });
+                navigate("");
               }}
             />
           </Tooltip>
