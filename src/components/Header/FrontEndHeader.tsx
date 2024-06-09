@@ -5,18 +5,22 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Drawer } from "antd";
 import useIsWideScreen from "../../config/useIsWideScreen";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AppColors } from "../../config/Theme";
 import { navigateItems } from "../../config/constantes";
+import { HeaderProps } from "../../config/Interface";
 
-// Définir les composants stylés
-const Header = styled.div`
+
+const Header = styled.div<HeaderProps>`
   height: 5em;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: ${({ isScrolle }) => (isScrolle ? "rgba(255, 255, 255, 0.5)" : "transparent")};
+  position: ${({ isScrolle }) => (isScrolle ? "fixed" : "relative")};
+  z-index: 10000;
 `;
 const HeaderContainer = styled.div`
   height: 100%;
@@ -76,6 +80,21 @@ const NavigateItemContainer = styled(NavLink)`
 const FrontEndHeader = () => {
   const isLargerThan768 = useIsWideScreen(768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolle, setIsScrolle] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolle(true);
+      } else {
+        setIsScrolle(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -83,7 +102,7 @@ const FrontEndHeader = () => {
 
   return (
     <>
-      <Header>
+      <Header isScrolle={isScrolle}>
         <HeaderContainer>
           <LogoContainer>
             <img src="/images/logo.png" alt="logo" style={{ height: "100%" }} />
@@ -127,7 +146,7 @@ const FrontEndHeader = () => {
               to={item.path}
               onClick={toggleMenu}
             >
-              <span>{item.label}</span>
+              <span style={{ fontSize: "1.5em" }}>{item.label}</span>
             </NavigateItemContainer>
           ))}
           <Button type="primary" icon={<FontAwesomeIcon icon={faHeart} />}>

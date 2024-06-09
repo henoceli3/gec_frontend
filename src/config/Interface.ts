@@ -9,3 +9,7 @@ export interface MembreEquipe {
   nom: string;
   role: string;
 }
+
+export interface HeaderProps {
+  isScrolle: boolean;
+}
