@@ -10,7 +10,7 @@ const Acceuil = () => {
         style={{
           height: "50vh",
           width: "100%",
-          backgroundImage: "url(/images/11.jpg)",
+          backgroundImage: "url(/images/20.png)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
