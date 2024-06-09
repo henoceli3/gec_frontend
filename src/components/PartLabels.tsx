@@ -1,6 +1,8 @@
 import { AppColors } from "../config/Theme";
-
-const PartLabels = ({ label }) => {
+interface Props {
+  label: string;
+}
+const PartLabels = ({ label }: Props) => {
   return (
     <>
       <h1 style={{ color: AppColors.primary }}>{label}</h1>
