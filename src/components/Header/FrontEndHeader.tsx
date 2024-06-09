@@ -20,7 +20,7 @@ const Header = styled.div<HeaderProps>`
   align-items: center;
   background-color: ${({ isScrolle }) => (isScrolle ? "rgba(255, 255, 255, 0.5)" : "transparent")};
   position: ${({ isScrolle }) => (isScrolle ? "fixed" : "relative")};
-  z-index: 10000;
+  z-index: 100;
 `;
 const HeaderContainer = styled.div`
   height: 100%;
