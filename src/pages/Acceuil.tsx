@@ -1,6 +1,9 @@
 import { Col, Row } from "antd";
 import PartLabels from "../components/PartLabels";
 import useIsWideScreen from "../config/useIsWideScreen";
+import CardEquipe from "../components/CardEquipe";
+import { MembreEquipe } from "../config/Interface";
+import { listeMembreEquipe } from "../config/constantes";
 
 const Acceuil = () => {
   const isLargerThan768 = useIsWideScreen(768);
@@ -10,7 +13,7 @@ const Acceuil = () => {
         style={{
           height: "50vh",
           width: "100%",
-          backgroundImage: "url(/images/20.png)",
+          backgroundImage: "url(/images/utiles/11.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -62,10 +65,20 @@ const Acceuil = () => {
           </p>
         </Col>
         <Col span={isLargerThan768 ? 16 : 24}>
-          <PartLabels label="Notre objectif" />
+          <PartLabels label="Notre Objectif" />
           <p style={{ textAlign: "justify", fontSize: "1.2rem" }}>
             créer une génération de chrétiens qui impacte dans le monde
           </p>
+        </Col>
+        <Col span={24}>
+          <PartLabels label="Notre Equipe" />
+          <Row gutter={[8, 8]}>
+            {listeMembreEquipe.map((membre: MembreEquipe, idx) => (
+              <Col xs={24} sm={12} md={8} key={idx}>
+                <CardEquipe membre={membre} />
+              </Col>
+            ))}
+          </Row>
         </Col>
       </Row>
     </div>

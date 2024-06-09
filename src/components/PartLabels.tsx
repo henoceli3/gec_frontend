@@ -5,7 +5,7 @@ interface Props {
 const PartLabels = ({ label }: Props) => {
   return (
     <>
-      <h1 style={{ color: AppColors.primary }}>{label}</h1>
+      <h1 style={{ color: AppColors.primary, textTransform: "capitalize" }}>{label}</h1>
     </>
   );
 };
