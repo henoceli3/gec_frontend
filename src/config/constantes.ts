@@ -2,7 +2,7 @@ import { MembreEquipe, NavigateItem } from "./Interface";
 
 export const navigateItems: NavigateItem[] = [
   { path: "/", label: "Accueil" },
-  { path: "/activite", label: "Activité" },
+  { path: "/activites", label: "Activité" },
   { path: "/temoignages", label: "Témoignages" },
 ];
 

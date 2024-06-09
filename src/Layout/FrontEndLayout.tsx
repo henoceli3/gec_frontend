@@ -20,7 +20,7 @@ const FrontEndLayout = () => {
               icon={<FontAwesomeIcon icon={faHeart} />}
               onClick={() => {
                 localStorage.clear();
-                navigate("/admin/login");
+                navigate("/dons");
               }}
             />
           </Tooltip>
@@ -30,7 +30,7 @@ const FrontEndLayout = () => {
               icon={<FontAwesomeIcon icon={faCalendarDays} />}
               onClick={() => {
                 localStorage.clear();
-                navigate("");
+                navigate("/activites");
               }}
             />
           </Tooltip>

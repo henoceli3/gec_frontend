@@ -4,6 +4,7 @@ import FrontEndLayout from "../Layout/FrontEndLayout";
 import Acceuil from "../pages/Acceuil";
 import Activites from "../pages/Activites";
 import Temoignages from "../pages/Temoignages";
+import Dons from "../pages/Dons";
 
 export const AppRouter = createBrowserRouter([
   {
@@ -11,8 +12,9 @@ export const AppRouter = createBrowserRouter([
     element: <FrontEndLayout />,
     children: [
       { path: "/", element: <Acceuil /> },
-      { path: "activite", element: <Activites /> },
+      { path: "activites", element: <Activites /> },
       { path: "temoignages", element: <Temoignages /> },
+      { path: "dons", element: <Dons /> },
     ],
     errorElement: <NotFoundPage />,
   },
