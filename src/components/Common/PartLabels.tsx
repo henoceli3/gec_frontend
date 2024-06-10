@@ -1,4 +1,5 @@
-import { AppColors } from "../config/Theme";
+import { AppColors } from "../../config/Theme";
+
 interface Props {
   label: string;
 }

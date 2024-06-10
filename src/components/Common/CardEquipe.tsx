@@ -1,5 +1,6 @@
-import { MembreEquipe } from "../config/Interface";
-import useIsWideScreen from "../config/useIsWideScreen";
+import { MembreEquipe } from "../../config/Interface";
+import useIsWideScreen from "../../config/useIsWideScreen";
+
 interface CardEquipeProps {
   membre: MembreEquipe;
 }

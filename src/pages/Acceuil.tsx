@@ -1,9 +1,9 @@
 import { Col, Row } from "antd";
-import PartLabels from "../components/PartLabels";
 import useIsWideScreen from "../config/useIsWideScreen";
-import CardEquipe from "../components/CardEquipe";
 import { MembreEquipe } from "../config/Interface";
 import { listeMembreEquipe } from "../config/constantes";
+import PartLabels from "../components/Common/PartLabels";
+import CardEquipe from "../components/Common/CardEquipe";
 
 const Acceuil = () => {
   const isLargerThan768 = useIsWideScreen(768);
