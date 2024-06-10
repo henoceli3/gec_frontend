@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +10,6 @@ import { AppColors } from "../../config/Theme";
 import { navigateItems } from "../../config/constantes";
 import { HeaderProps } from "../../config/Interface";
 
-
 const Header = styled.div<HeaderProps>`
   height: 5em;
   width: 100%;
@@ -18,7 +17,8 @@ const Header = styled.div<HeaderProps>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: ${({ isScrolle }) => (isScrolle ? "rgba(255, 255, 255, 0.5)" : "transparent")};
+  background-color: ${({ isScrolle }) =>
+    isScrolle ? "rgba(255, 255, 255, 0.5)" : "transparent"};
   position: ${({ isScrolle }) => (isScrolle ? "fixed" : "relative")};
   z-index: 100;
 `;
@@ -81,6 +81,7 @@ const FrontEndHeader = () => {
   const isLargerThan768 = useIsWideScreen(768);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolle, setIsScrolle] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -114,7 +115,13 @@ const FrontEndHeader = () => {
                   <span>{item.label}</span>
                 </NavigateItemContainer>
               ))}
-              <Button type="primary" icon={<FontAwesomeIcon icon={faHeart} />}>
+              <Button
+                type="primary"
+                icon={<FontAwesomeIcon icon={faHeart} />}
+                onClick={() => {
+                  navigate("/dons");
+                }}
+              >
                 Faire un don
               </Button>
             </DesktopMenu>
@@ -149,7 +156,14 @@ const FrontEndHeader = () => {
               <span style={{ fontSize: "1.5em" }}>{item.label}</span>
             </NavigateItemContainer>
           ))}
-          <Button type="primary" icon={<FontAwesomeIcon icon={faHeart} />}>
+          <Button
+            type="primary"
+            icon={<FontAwesomeIcon icon={faHeart} />}
+            onClick={() => {
+              navigate("/dons");
+              toggleMenu();
+            }}
+          >
             Faire un don
           </Button>
         </DrawerContainer>
