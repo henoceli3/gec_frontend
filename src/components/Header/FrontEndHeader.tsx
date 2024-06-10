@@ -111,7 +111,11 @@ const FrontEndHeader = () => {
           {isLargerThan768 ? (
             <DesktopMenu>
               {navigateItems.map((item) => (
-                <NavigateItemContainer key={item.path} to={item.path}>
+                <NavigateItemContainer
+                  key={item.path}
+                  to={item.path}
+                  className={"roboto-mono"}
+                >
                   <span>{item.label}</span>
                 </NavigateItemContainer>
               ))}
@@ -121,6 +125,7 @@ const FrontEndHeader = () => {
                 onClick={() => {
                   navigate("/dons");
                 }}
+                className={"roboto-mono"}
               >
                 Faire un don
               </Button>
@@ -163,6 +168,7 @@ const FrontEndHeader = () => {
               navigate("/dons");
               toggleMenu();
             }}
+            className={"roboto-mono"}
           >
             Faire un don
           </Button>
