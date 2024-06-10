@@ -22,7 +22,7 @@ const FrontEndFooter = () => {
           margin: "0",
           marginTop: "auto",
           width: "100%",
-          height: isLargerThan768 ? "40vh" : "auto",
+          height: isLargerThan768 ? "20em" : "auto",
           backgroundColor: AppColors.tertiary,
           color: "white",
           padding: isLargerThan768 ? "2rem" : "1rem",
@@ -47,15 +47,13 @@ const FrontEndFooter = () => {
             style={{ cursor: "pointer" }}
             onClick={() => window.open("tel:+22507777777")}
           >
-            <FontAwesomeIcon icon={faPhone} />
-            +225 07 77 77 77
+            <FontAwesomeIcon icon={faPhone} /> +225 07 77 77 77
           </p>
           <p
             style={{ cursor: "pointer", marginTop: "1rem" }}
             onClick={() => window.open("tel:+22507777777")}
           >
-            <FontAwesomeIcon icon={faPhone} />
-            +225 07 77 77 77
+            <FontAwesomeIcon icon={faPhone} /> +225 07 77 77 77
           </p>
           <p
             style={{ cursor: "pointer" }}
