@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Temoignages } from "../../config/Interface";
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import useIsWideScreen from "../../config/useIsWideScreen";
+import { AppColors } from "../../config/Theme";
 
 interface CardTemoignagesProps {
   temoignage: Temoignages;
@@ -63,7 +64,7 @@ const CardTemoignages = ({ temoignage, place }: CardTemoignagesProps) => {
               alignItems: "center",
             }}
           >
-            <p>
+            <p style={{ fontSize: "1.5em" }}>
               <span>
                 <FontAwesomeIcon icon={faQuoteLeft} />
               </span>{" "}
@@ -73,7 +74,16 @@ const CardTemoignages = ({ temoignage, place }: CardTemoignagesProps) => {
               </span>
             </p>
             <div style={{ marginLeft: "auto" }}>
-              <p style={{ fontWeight: "bold" }}>{temoignage.nom}</p>
+              <p
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "1.5em",
+                  color: AppColors.primary,
+                }}
+                className="roboto-mono"
+              >
+                {temoignage.nom}
+              </p>
             </div>
           </div>
         </div>

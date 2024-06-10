@@ -1,4 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Activites } from "../../config/Interface";
+import { AppColors } from "../../config/Theme";
+import { faCalendarDays } from "@fortawesome/free-regular-svg-icons";
 
 interface CardActiviteProps {
   activite: Activites;
@@ -32,8 +35,16 @@ const CardActivites = ({ activite }: CardActiviteProps) => {
             height: "40%",
           }}
         >
-          <h3>{activite.title}</h3>
-          <p>{activite.description}</p>
+          <h3
+            className="roboto-mono"
+            style={{ fontSize: "1.5rem", color: AppColors.primary }}
+          >
+            <span>
+              <FontAwesomeIcon icon={faCalendarDays} />
+            </span>{" "}
+            {activite.title}
+          </h3>
+          <p style={{ fontSize: "1.2rem" }}>{activite.description}</p>
         </div>
       </div>
     </>

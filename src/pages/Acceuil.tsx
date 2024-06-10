@@ -17,7 +17,7 @@ const Acceuil = () => {
       />
 
       <Row
-        gutter={[8, 8]}
+        gutter={[16, 16]}
         style={{ margin: "0", paddingLeft: "1rem", paddingRight: "1rem" }}
       >
         <Col span={24}></Col>

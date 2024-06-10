@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faCopyright, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const FooterColoneLabel = styled.p`
   font-size: 1.5em;
@@ -22,7 +22,7 @@ const FrontEndFooter = () => {
           margin: "0",
           marginTop: "auto",
           width: "100%",
-          height: isLargerThan768 ? "20em" : "auto",
+          height: isLargerThan768 ? "30em" : "auto",
           backgroundColor: AppColors.tertiary,
           color: "white",
           padding: isLargerThan768 ? "2rem" : "1rem",
@@ -79,6 +79,33 @@ const FrontEndFooter = () => {
           <Button type="primary" style={{ marginTop: "1rem" }}>
             Souscrire
           </Button>
+        </Col>
+        <Col
+          span={24}
+          style={{
+            textAlign: "center",
+            marginTop: "auto",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <small>
+            <span>
+              <FontAwesomeIcon icon={faCopyright} />
+            </span>{" "}
+            2024 GEC
+          </small>
+          <small
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              window.open("https://kodjo-henoc.vercel.app/");
+            }}
+          >
+            Conçut par{" "}
+            <span style={{ color: "#9B9B9B", fontWeight: "bold" }}>
+              KODJO HENOC
+            </span>
+          </small>
         </Col>
       </Row>
     </>

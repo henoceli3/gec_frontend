@@ -43,8 +43,17 @@ const HeadImageCard = ({
               backgroundColor: "rgba(0,0,0,0.5)",
             }}
           >
-            <h1 style={{ color: "white", textAlign: "center" }}>{title}</h1>
-            {description && <p style={{ color: "white", textAlign: "center" }}>{description}</p>}
+            <h1
+              style={{ color: "white", textAlign: "center", fontSize: "3em" }}
+              className="gwendolyn-bold"
+            >
+              {title}
+            </h1>
+            {description && (
+              <p style={{ color: "white", textAlign: "center" }}>
+                {description}
+              </p>
+            )}
           </div>
         </div>
       </div>

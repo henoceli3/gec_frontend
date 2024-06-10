@@ -1,4 +1,3 @@
-
 export interface NavigateItem {
   path: string;
   label: string;
@@ -24,4 +23,8 @@ export interface Temoignages {
   image: string;
   nom?: string;
   temoignage: string;
+}
+
+export interface ImageGalerie {
+  image: string;
 }
