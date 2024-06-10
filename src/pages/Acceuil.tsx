@@ -4,35 +4,17 @@ import { MembreEquipe } from "../config/Interface";
 import { listeMembreEquipe } from "../config/constantes";
 import PartLabels from "../components/Common/PartLabels";
 import CardEquipe from "../components/Common/CardEquipe";
+import HeadImageCard from "../components/Common/HeadImageCard";
+import { PageContainer } from "../components/StyledComponents/PageContainers";
 
 const Acceuil = () => {
   const isLargerThan768 = useIsWideScreen(768);
   return (
-    <div style={{ height: "auto", width: "100%", marginBottom: "2rem" }}>
-      <div
-        style={{
-          height: "50vh",
-          width: "100%",
-          backgroundImage: "url(/images/utiles/11.jpg)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div
-          style={{
-            height: "100%",
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "rgba(0,0,0,0.5)",
-          }}
-        >
-          <h1 style={{ color: "white", textAlign: "center" }}>
-            Une génération de chretiens qui impacte dans le monde
-          </h1>
-        </div>
-      </div>
+    <PageContainer>
+      <HeadImageCard
+        imageUrl={"/images/utiles/11.jpg"}
+        title={"Une génération de chretiens qui impacte dans le monde"}
+      />
 
       <Row
         gutter={[8, 8]}
@@ -81,7 +63,7 @@ const Acceuil = () => {
           </Row>
         </Col>
       </Row>
-    </div>
+    </PageContainer>
   );
 };
 

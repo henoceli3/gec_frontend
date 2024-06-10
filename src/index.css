@@ -10,7 +10,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.fili {
+  background-color: #10338d73;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

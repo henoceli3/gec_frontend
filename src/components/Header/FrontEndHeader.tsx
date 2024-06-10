@@ -17,9 +17,9 @@ const Header = styled.div<HeaderProps>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: ${({ isScrolle }) =>
-    isScrolle ? "rgba(255, 255, 255, 0.5)" : "transparent"};
-  position: ${({ isScrolle }) => (isScrolle ? "fixed" : "relative")};
+  background-color: ${({ isscrolle }) =>
+    isscrolle ? "rgba(255, 255, 255, 0.5)" : "transparent"};
+  position: ${({ isscrolle }) => (isscrolle ? "fixed" : "relative")};
   z-index: 100;
 `;
 const HeaderContainer = styled.div`
@@ -103,7 +103,7 @@ const FrontEndHeader = () => {
 
   return (
     <>
-      <Header isScrolle={isScrolle}>
+      <Header isscrolle={isScrolle}>
         <HeaderContainer>
           <LogoContainer>
             <img src="/images/logo.png" alt="logo" style={{ height: "100%" }} />

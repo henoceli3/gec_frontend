@@ -11,5 +11,17 @@ export interface MembreEquipe {
 }
 
 export interface HeaderProps {
-  isScrolle: boolean;
+  isscrolle: boolean;
+}
+
+export interface Activites {
+  image: string;
+  title: string;
+  description: string;
+}
+
+export interface Temoignages {
+  image: string;
+  nom?: string;
+  temoignage: string;
 }

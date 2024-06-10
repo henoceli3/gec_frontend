@@ -1,6 +1,6 @@
-import { notification } from 'antd';
-import { RouterProvider } from 'react-router-dom';
-import { AppRouter } from './router/router';
+import { notification } from "antd";
+import { RouterProvider } from "react-router-dom";
+import { AppRouter } from "./router/router";
 
 function App() {
   notification.config({
@@ -11,4 +11,4 @@ function App() {
   return <RouterProvider router={AppRouter} />;
 }
 
-export default App
+export default App;
