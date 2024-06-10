@@ -1,11 +1,9 @@
 import { MembreEquipe } from "../../config/Interface";
-import useIsWideScreen from "../../config/useIsWideScreen";
 
 interface CardEquipeProps {
   membre: MembreEquipe;
 }
 const CardEquipe = ({ membre }: CardEquipeProps) => {
-  const isLargerThan768 = useIsWideScreen(768);
   return (
     <>
       <div
@@ -14,7 +12,6 @@ const CardEquipe = ({ membre }: CardEquipeProps) => {
           flexDirection: "column",
           width: "100%",
           height: "40em",
-          borderRadius: isLargerThan768 ? "1em" : "0.5em",
         }}
         className="membre-card"
       >
@@ -25,7 +22,6 @@ const CardEquipe = ({ membre }: CardEquipeProps) => {
             backgroundPosition: "center",
             width: "100%",
             height: "70%",
-            borderRadius: isLargerThan768 ? "1em 1em 0 0" : "0.5em 0.5em 0 0",
           }}
         ></div>
         <div

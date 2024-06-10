@@ -5,6 +5,7 @@ import Acceuil from "../pages/Acceuil";
 import Activites from "../pages/Activites";
 import Temoignages from "../pages/Temoignages";
 import Dons from "../pages/Dons";
+import Galerie from "../pages/Galerie";
 
 export const AppRouter = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ export const AppRouter = createBrowserRouter([
       { path: "activites", element: <Activites /> },
       { path: "temoignages", element: <Temoignages /> },
       { path: "dons", element: <Dons /> },
+      { path: "galerie", element: <Galerie /> },
     ],
     errorElement: <NotFoundPage />,
   },

@@ -9,6 +9,7 @@ export const navigateItems: NavigateItem[] = [
   { path: "/", label: "Accueil" },
   { path: "/activites", label: "Activité" },
   { path: "/temoignages", label: "Témoignages" },
+  { path: "/galerie", label: "Galerie" },
 ];
 
 export const listeMembreEquipe: MembreEquipe[] = [
