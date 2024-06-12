@@ -28,7 +28,7 @@ const Activites = () => {
           <Col span={24}>
             <Row gutter={[8, 8]} style={{ margin: "0" }}>
               {listeActivitesMensuelles.map((activite, idx) => (
-                <Col xs={24} sm={12} md={12} key={idx}>
+                <Col xs={24} sm={8} md={8} key={idx}>
                   <CardActivites activite={activite} />
                 </Col>
               ))}
@@ -38,7 +38,7 @@ const Activites = () => {
             <PartLabels label="Activité annuelle" />
             <Row gutter={[8, 8]} style={{ margin: "0" }}>
               {listeActiviteAnnuelles.map((activite, idx) => (
-                <Col xs={24} sm={12} md={12} key={idx}>
+                <Col xs={24} sm={8} md={8} key={idx}>
                   <CardActivites activite={activite} />
                 </Col>
               ))}

@@ -47,20 +47,22 @@ const FrontEndFooter = () => {
             style={{ cursor: "pointer" }}
             onClick={() => window.open("tel:+22507777777")}
           >
-            <FontAwesomeIcon icon={faPhone} /> +225 07 77 77 77
+            <FontAwesomeIcon icon={faPhone} color={AppColors.secondary} /> +225
+            07 77 77 77
           </p>
           <p
             style={{ cursor: "pointer", marginTop: "1rem" }}
             onClick={() => window.open("tel:+22507777777")}
           >
-            <FontAwesomeIcon icon={faPhone} /> +225 07 77 77 77
+            <FontAwesomeIcon icon={faPhone} color={AppColors.secondary} /> +225
+            07 77 77 77
           </p>
           <p
             style={{ cursor: "pointer" }}
             onClick={() => window.open("mailto:info-gec@gec.org")}
           >
             <span>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope} color={AppColors.secondary} />
             </span>{" "}
             info-gec@gec.org
           </p>

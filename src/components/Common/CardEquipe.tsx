@@ -12,11 +12,11 @@ const CardEquipe = ({ membre }: CardEquipeProps) => {
           display: "flex",
           flexDirection: "column",
           width: "100%",
-          height: "40em",
+          // height: "40em",
         }}
         className="membre-card"
       >
-        <div
+        {/* <div
           style={{
             backgroundImage: `url(${membre.photo})`,
             backgroundSize: "cover",
@@ -24,7 +24,7 @@ const CardEquipe = ({ membre }: CardEquipeProps) => {
             width: "100%",
             height: "70%",
           }}
-        ></div>
+        ></div> */}
         <div
           style={{
             display: "flex",
@@ -32,13 +32,13 @@ const CardEquipe = ({ membre }: CardEquipeProps) => {
             alignItems: "flex-start",
             justifyContent: "center",
             width: "100%",
-            height: "30%",
+            // height: "30%",
           }}
         >
           <h3
             className="roboto-mono"
             style={{
-              color: AppColors.primary,
+              color: AppColors.secondary,
               textTransform: "capitalize",
               fontSize: "1.5em",
               margin: "0",

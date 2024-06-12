@@ -1,3 +1,5 @@
+import useIsWideScreen from "../../config/useIsWideScreen";
+
 interface Props {
   imageUrl: string;
   filigrame?: boolean;
@@ -12,6 +14,7 @@ const HeadImageCard = ({
   title,
   description,
 }: Props) => {
+  const isLargerThan768 = useIsWideScreen(768);
   return (
     <>
       <div
@@ -44,7 +47,12 @@ const HeadImageCard = ({
             }}
           >
             <h1
-              style={{ color: "white", textAlign: "center", fontSize: "3em" }}
+              style={{
+                color: "white",
+                textAlign: "center",
+                fontSize: isLargerThan768 ? "3em" : "2em",
+                margin: 0,
+              }}
               className="gwendolyn-bold"
             >
               {title}

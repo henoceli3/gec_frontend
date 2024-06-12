@@ -2,11 +2,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Activites } from "../../config/Interface";
 import { AppColors } from "../../config/Theme";
 import { faCalendarDays } from "@fortawesome/free-regular-svg-icons";
+import useIsWideScreen from "../../config/useIsWideScreen";
 
 interface CardActiviteProps {
   activite: Activites;
 }
 const CardActivites = ({ activite }: CardActiviteProps) => {
+  const isLargerThan768 = useIsWideScreen(768);
   return (
     <>
       <div
@@ -14,7 +16,7 @@ const CardActivites = ({ activite }: CardActiviteProps) => {
           display: "flex",
           flexDirection: "column",
           width: "100%",
-          height: "30em",
+          height: isLargerThan768 ? "30em" : "auto",
         }}
         className="activite-card"
       >
@@ -24,7 +26,7 @@ const CardActivites = ({ activite }: CardActiviteProps) => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             width: "100%",
-            height: "60%",
+            height: isLargerThan768 ? "60%" : "30em",
           }}
         ></div>
         <div
@@ -32,19 +34,19 @@ const CardActivites = ({ activite }: CardActiviteProps) => {
             display: "flex",
             flexDirection: "column",
             width: "100%",
-            height: "40%",
+            height: isLargerThan768 ? "40%" : "auto",
           }}
         >
           <h3
             className="roboto-mono"
-            style={{ fontSize: "1.5rem", color: AppColors.primary }}
+            style={{ fontSize: "1.5rem", color: AppColors.secondary }}
           >
             <span>
               <FontAwesomeIcon icon={faCalendarDays} />
             </span>{" "}
             {activite.title}
           </h3>
-          <p style={{ fontSize: "1.2rem" }}>{activite.description}</p>
+          <p style={{ fontSize: "1.1em" }}>{activite.description}</p>
         </div>
       </div>
     </>

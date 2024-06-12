@@ -47,7 +47,7 @@ const CardTemoignages = ({ temoignage, place }: CardTemoignagesProps) => {
         <div
           style={{
             width: isLargerThan768 ? "60%" : "100%",
-            height: isLargerThan768 ? "100%" : "30em",
+            height: isLargerThan768 ? "100%" : "auto",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -65,11 +65,11 @@ const CardTemoignages = ({ temoignage, place }: CardTemoignagesProps) => {
             }}
           >
             <p style={{ fontSize: "1.5em" }}>
-              <span>
+              <span style={{ color: AppColors.secondary }}>
                 <FontAwesomeIcon icon={faQuoteLeft} />
               </span>{" "}
               {temoignage.temoignage}{" "}
-              <span>
+              <span style={{ color: AppColors.secondary }}>
                 <FontAwesomeIcon icon={faQuoteRight} />
               </span>
             </p>
@@ -78,7 +78,7 @@ const CardTemoignages = ({ temoignage, place }: CardTemoignagesProps) => {
                 style={{
                   fontWeight: "bold",
                   fontSize: "1.5em",
-                  color: AppColors.primary,
+                  color: AppColors.secondary,
                 }}
                 className="roboto-mono"
               >
