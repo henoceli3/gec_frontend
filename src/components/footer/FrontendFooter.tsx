@@ -48,14 +48,14 @@ const FrontEndFooter = () => {
             onClick={() => window.open("tel:+22507777777")}
           >
             <FontAwesomeIcon icon={faPhone} color={AppColors.secondary} /> +225
-            07 77 77 77
+            0707447196
           </p>
           <p
             style={{ cursor: "pointer", marginTop: "1rem" }}
             onClick={() => window.open("tel:+22507777777")}
           >
             <FontAwesomeIcon icon={faPhone} color={AppColors.secondary} /> +225
-            07 77 77 77
+            0158788806
           </p>
           <p
             style={{ cursor: "pointer" }}
@@ -64,7 +64,7 @@ const FrontEndFooter = () => {
             <span>
               <FontAwesomeIcon icon={faEnvelope} color={AppColors.secondary} />
             </span>{" "}
-            info-gec@gec.org
+            secretariat@petitpalmier.org
           </p>
           <p>Rétrouvez nous sur les reseaux sociaux</p>
           <div>
