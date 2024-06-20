@@ -1,3 +1,5 @@
+import { IconDefinition } from "@fortawesome/free-regular-svg-icons";
+
 export interface NavigateItem {
   path: string;
   label: string;
@@ -26,5 +28,12 @@ export interface Temoignages {
 }
 
 export interface ImageGalerie {
+  image: string;
+}
+
+export interface Stats {
+  icon: IconDefinition;
+  stat: number;
+  label: string;
   image: string;
 }

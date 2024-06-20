@@ -1,7 +1,13 @@
 import {
+  faBookBible,
+  faChildren,
+  faTents,
+} from "@fortawesome/free-solid-svg-icons";
+import {
   Activites,
   MembreEquipe,
   NavigateItem,
+  Stats,
   Temoignages,
 } from "./Interface";
 
@@ -101,5 +107,26 @@ export const listeTemoignages: Temoignages[] = [
     image: "/images/utiles/5.jpg",
     temoignage:
       "Grâce à GEC, j'ai découvert une profondeur spirituelle inestimable et appris à compter sur le Seigneur dans tous les aspects de ma vie. L'expérience avec GEC m'a enseigné que la foi est une pierre angulaire indispensable dans notre marche chrétienne. Aujourd'hui, je conserve et applique quotidiennement les valeurs fondamentales de la vie en Jésus que j'ai assimilées grâce à cette organisation. Ces enseignements m'ont non seulement renforcé spirituellement, mais m'ont également guidé dans mes choix et actions, me permettant de vivre une vie épanouie et en harmonie avec ma foi.",
+  },
+];
+
+export const listeStats: Stats[] = [
+  {
+    icon: faChildren,
+    stat: 100,
+    label: "Enfants formés",
+    image: "/images/utiles/15.jpg",
+  },
+  {
+    icon: faTents,
+    stat: 2,
+    label: "Camps bibliques",
+    image: "/images/utiles/15.jpg",
+  },
+  {
+    icon: faBookBible,
+    stat: 2,
+    label: "Retraites par ans",
+    image: "/images/utiles/15.jpg",
   },
 ];
