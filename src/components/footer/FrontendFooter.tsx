@@ -28,7 +28,7 @@ const FrontEndFooter = () => {
           padding: isLargerThan768 ? "2rem" : "1rem",
         }}
       >
-        <Col span={isLargerThan768 ? 8 : 12}>
+        <Col span={isLargerThan768 ? 8 : 24}>
           <FooterColoneLabel>Navigation</FooterColoneLabel>
           {navigateItems.map((item) => (
             <p
@@ -41,7 +41,7 @@ const FrontEndFooter = () => {
           ))}
         </Col>
 
-        <Col span={isLargerThan768 ? 8 : 12}>
+        <Col span={isLargerThan768 ? 8 : 24}>
           <FooterColoneLabel>Contactes</FooterColoneLabel>
           <p
             style={{ cursor: "pointer" }}
@@ -66,7 +66,6 @@ const FrontEndFooter = () => {
             </span>{" "}
             secretariat@petitpalmier.org
           </p>
-          <p>Rétrouvez nous sur les reseaux sociaux</p>
           <div>
             <img
               src="/images/rs/facebook.png"

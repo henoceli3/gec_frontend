@@ -115,18 +115,18 @@ export const listeStats: Stats[] = [
     icon: faChildren,
     stat: 100,
     label: "Enfants formés",
-    image: "/images/utiles/15.jpg",
+    image: "/images/galerie/59.jpg",
   },
   {
     icon: faTents,
     stat: 2,
     label: "Camps bibliques",
-    image: "/images/utiles/15.jpg",
+    image: "/images/galerie/169.jpg",
   },
   {
     icon: faBookBible,
     stat: 2,
     label: "Retraites par ans",
-    image: "/images/utiles/15.jpg",
+    image: "/images/galerie/73.jpg",
   },
 ];

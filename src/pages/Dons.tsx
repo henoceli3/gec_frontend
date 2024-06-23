@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRef } from "react";
 import useScrollTriggeredCountUp from "../components/Common/UseScrollTriggeredCountUp";
 import React from "react";
+import moment from "moment";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Dons = () => {
   const isLargerThan768 = useIsWideScreen(768);
@@ -26,19 +28,14 @@ const Dons = () => {
       />
       <StyleRow gutter={[16, 16]} style={{ margin: "0" }}>
         <Col span={24}>
-          <p style={{ fontSize: isLargerThan768 ? "2em" : "1em" }}>
-            Notre ONG œuvre depuis{" "}
-            <span style={{ fontWeight: "bold" }}>le 12 avril 2014</span> à la
-            formation des enfants.
-          </p>
           <p
             style={{
               fontSize: isLargerThan768 ? "2em" : "1.2em",
               fontWeight: "bold",
-              color: AppColors.primary,
+              textAlign: "center",
             }}
           >
-            Le GEC en chiffres, c'est :
+            Le GEC en chiffres, c'est
           </p>
         </Col>
         {listeStats.map((stat, index) => (
@@ -78,6 +75,57 @@ const Dons = () => {
             </div>
           </Col>
         ))}
+        <Col span={24}></Col>
+        <Col
+          xs={24}
+          md={16}
+          style={{ fontSize: isLargerThan768 ? "1.5em" : "1em" }}
+        >
+          <p>
+            Notre ONG œuvre depuis{" "}
+            <span style={{ fontWeight: "bold" }}>le 12 avril 2014</span> à la
+            formation des enfants. Nous multiplions les activités depuis
+            maintenant{" "}
+            <span style={{ fontWeight: "bold" }}>{`${
+              Number(moment().format("YYYY")) - 2014
+            } ans`}</span>{" "}
+            en faveur de la formation chrétienne des enfants.
+          </p>
+          <p>
+            Soutenez-nous en faisant un{" "}
+            <span style={{ fontWeight: "bold" }}>don</span> pour appuyer notre
+            initiative.
+          </p>
+          <p style={{ color: AppColors.primary, fontWeight: "bold" }}>
+            Comment faire un don ?
+          </p>
+          <p>
+            Rien de plus simple,
+            <br />
+            Vous pouvez nous faire un don en nous envoyant de l'argent par{" "}
+            <span style={{ fontWeight: "bold" }}>Mobile Money</span>.<br />
+            Nos numéros sont les suivants: <br />
+            <span>
+              <FontAwesomeIcon icon={faPhone} color={AppColors.secondary} />
+            </span>{" "}
+            +225 0707447196 /{" "}
+            <span>
+              <FontAwesomeIcon icon={faPhone} color={AppColors.secondary} />
+            </span>{" "}
+            +225 0158788806. <br />
+          </p>
+          <p>
+            Ou par virement bancaire en contactant notre équipe à l'adresse
+            suivante{" "}
+            <span
+              style={{ fontWeight: "bold", cursor: "pointer" }}
+              onClick={() => window.open("mailto:secretariat@petitpalmier.org")}
+            >
+              secretariat@petitpalmier.org
+            </span>
+            .
+          </p>
+        </Col>
       </StyleRow>
     </PageContainer>
   );
