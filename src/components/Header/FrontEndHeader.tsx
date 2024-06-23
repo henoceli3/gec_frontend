@@ -34,6 +34,7 @@ const HeaderContainer = styled.div`
 const LogoContainer = styled.div`
   height: 100%;
   width: auto;
+  cursor: pointer;
 `;
 
 const DesktopMenu = styled.div`

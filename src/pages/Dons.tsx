@@ -112,7 +112,7 @@ const Dons = () => {
             <span>
               <FontAwesomeIcon icon={faPhone} color={AppColors.secondary} />
             </span>{" "}
-            +225 0158788806. <br />
+            +225 0158788806.
           </p>
           <p>
             Ou par virement bancaire en contactant notre équipe à l'adresse

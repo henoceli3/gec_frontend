@@ -24,7 +24,7 @@ const Acceuil = () => {
       <StyleRow gutter={[16, 16]} style={{ margin: "0" }}>
         <Col span={isLargerThan768 ? 16 : 24}>
           <PartLabels label="Qui sommes nous ?" />
-          <p style={{  fontSize: "1.1em" }}>
+          <p style={{  fontSize: "1.2em" }}>
             L’ONG, Le petit palmier est une organisation avec pour vision divine
             la formation des enfants et des jeunes de toutes parts à l’écoute du
             Seigneur en vue de les rendre prêts à œuvrer pour le Royaume de Dieu
@@ -33,7 +33,7 @@ const Acceuil = () => {
         </Col>
         <Col span={isLargerThan768 ? 16 : 24}>
           <PartLabels label="Notre mission" />
-          <p style={{  fontSize: "1.1em" }}>
+          <p style={{  fontSize: "1.2em" }}>
             Transformer les enfants à l'image de Jésus-Christ, Bâtir des adultes
             exemplaires, honorables dans la société, Faire partie des meilleurs
             enfants de Dieu, des surdoués, des parents modèles.
@@ -41,16 +41,16 @@ const Acceuil = () => {
         </Col>
         <Col span={isLargerThan768 ? 16 : 24}>
           <PartLabels label="Notre vision" />
-          <p style={{  fontSize: "1.1em" }}>
-            rapprocher les enfants de Leur Père Dieu et leur inculquer également
+          <p style={{  fontSize: "1.2em" }}>
+            Rapprocher les enfants de Leur Père Dieu et leur inculquer également
             les enseignements du Christ et des apôtres avec comme seul outil la
             Bible.
           </p>
         </Col>
         <Col span={isLargerThan768 ? 16 : 24}>
           <PartLabels label="Notre Objectif" />
-          <p style={{  fontSize: "1.1em" }}>
-            créer une génération de chrétiens qui impacte dans le monde
+          <p style={{  fontSize: "1.2em" }}>
+            Créer une génération de chrétiens qui impacte dans le monde
           </p>
         </Col>
         <Col span={24}>
