@@ -104,7 +104,7 @@ const FrontEndHeader = () => {
 
   return (
     <>
-      <Header isscrolle={isScrolle}>
+      <Header isscrolle={isScrolle} id="header">
         <HeaderContainer>
           <LogoContainer onClick={() => navigate("/")}>
             <img src="/images/logo.png" alt="logo" style={{ height: "100%" }} />

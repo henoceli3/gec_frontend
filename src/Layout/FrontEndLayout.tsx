@@ -5,9 +5,22 @@ import { Outlet, useNavigate } from "react-router-dom";
 import FrontEndHeader from "../components/Header/FrontEndHeader";
 import "./FrontEndLayout.css";
 import FrontEndFooter from "../components/footer/FrontendFooter";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
 
 const FrontEndLayout = () => {
   const navigate = useNavigate();
+  const [windowsPosition, setWindowsPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setWindowsPosition(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <div className="app">
@@ -24,6 +37,15 @@ const FrontEndLayout = () => {
               }}
             />
           </Tooltip>
+          {windowsPosition > 0 && (
+            <FloatButton
+              type="primary"
+              icon={<FontAwesomeIcon icon={faArrowUp} />}
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            />
+          )}
         </FloatButton.Group>
         <FrontEndFooter />
       </div>
