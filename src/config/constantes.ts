@@ -41,7 +41,7 @@ export const listeMembreEquipe: MembreEquipe[] = [
   },
   {
     photo: "/images/equipe/2.jpg",
-    nom: "YED MELIANE JOELLE QUERES",
+    nom: "YED MELIANE JOELLE QUEREN",
     role: "Sécrétaire Adjointe",
   },
   {
@@ -101,12 +101,13 @@ export const listeTemoignages: Temoignages[] = [
     image: "/images/utiles/14.jpg",
     nom: "Kendangudi Muchtima Ketsia Rachel",
     temoignage:
-      "Grâce à GEC, j'ai découvert une profondeur spirituelle inestimable et appris à compter sur le Seigneur dans tous les aspects de ma vie. L'expérience avec GEC m'a enseigné que la foi est une pierre angulaire indispensable dans notre marche chrétienne. Aujourd'hui, je conserve et applique quotidiennement les valeurs fondamentales de la vie en Jésus que j'ai assimilées grâce à cette organisation. Ces enseignements m'ont non seulement renforcé spirituellement, mais m'ont également guidé dans mes choix et actions, me permettant de vivre une vie épanouie et en harmonie avec ma foi.",
+      "GEC m'a permis d'en apprendre plus sur le Seigneur et à savoir compter sur lui. Grâce à GEC, j'ai appris que la foi était indispensable dans notre marche chrétienne. Et, jusqu'à présent je garde ses valeurs fondamentales de la vie en Jésus et je les applique à ma vie quotidienne",
   },
   {
     image: "/images/utiles/5.jpg",
+    nom:"Yed Johanne",
     temoignage:
-      "Grâce à GEC, j'ai découvert une profondeur spirituelle inestimable et appris à compter sur le Seigneur dans tous les aspects de ma vie. L'expérience avec GEC m'a enseigné que la foi est une pierre angulaire indispensable dans notre marche chrétienne. Aujourd'hui, je conserve et applique quotidiennement les valeurs fondamentales de la vie en Jésus que j'ai assimilées grâce à cette organisation. Ces enseignements m'ont non seulement renforcé spirituellement, mais m'ont également guidé dans mes choix et actions, me permettant de vivre une vie épanouie et en harmonie avec ma foi.",
+      "Depuis que je suis à GEC, j'ai appris plein de nouvelles choses par rapport à mon identité en Christ. Grâce à GEC, je suis devenue une nouvelle personne en Jésus. J'ai appris qu'il faut honorer ses parents car c'était le secret d'une vie longue et heureuse. Aussi, en participant aux activités de GEC, j'ai eu de nouveaux amis avec qui j'ai grandi et développé l'amour et la communion fraternelle",
   },
 ];
 

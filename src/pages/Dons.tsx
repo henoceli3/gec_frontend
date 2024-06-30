@@ -35,7 +35,7 @@ const Dons = () => {
               textAlign: "center",
             }}
           >
-            Le GEC en chiffres, c'est
+            L'ONG GEC en chiffres, c'est
           </p>
         </Col>
         {listeStats.map((stat, index) => (
@@ -112,7 +112,7 @@ const Dons = () => {
             <span>
               <FontAwesomeIcon icon={faPhone} color={AppColors.secondary} />
             </span>{" "}
-            +225 0158788806.
+            +225 0152788806.
           </p>
           <p>
             Ou par virement bancaire en contactant notre équipe à l'adresse

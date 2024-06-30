@@ -55,7 +55,7 @@ const FrontEndFooter = () => {
             onClick={() => window.open("tel:+22507777777")}
           >
             <FontAwesomeIcon icon={faPhone} color={AppColors.secondary} /> +225
-            0158788806
+            0152788806
           </p>
           <p
             style={{ cursor: "pointer" }}
