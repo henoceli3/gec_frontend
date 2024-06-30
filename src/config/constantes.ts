@@ -107,7 +107,7 @@ export const listeTemoignages: Temoignages[] = [
     image: "/images/utiles/5.jpg",
     nom:"Yed Johanne",
     temoignage:
-      "Depuis que je suis à GEC, j'ai appris plein de nouvelles choses par rapport à mon identité en Christ. Grâce à GEC, je suis devenue une nouvelle personne en Jésus. J'ai appris qu'il faut honorer ses parents car c'était le secret d'une vie longue et heureuse. Aussi, en participant aux activités de GEC, j'ai eu de nouveaux amis avec qui j'ai grandi et développé l'amour et la communion fraternelle",
+      "Depuis que je suis à GEC, j'ai appris plein de nouvelles choses par rapport à mon identité en Christ. Grâce à GEC, je suis devenue une nouvelle personne en Jésus. J'ai appris qu'il faut honorer ses parents car c'est le secret d'une vie longue et heureuse. Aussi, en participant aux activités de GEC, j'ai eu de nouveaux amis avec qui j'ai grandi et développé l'amour et la communion fraternelle",
   },
 ];
 
